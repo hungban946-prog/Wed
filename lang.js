@@ -26,14 +26,14 @@ const gif = document.getElementById('gif');
     "Thật sự không  luôn hả?",
     "Anh buồn quá đi...",
     "Em dễ thương mà, đồng ý đi anh đi!",
-    "Tại sao em lại không yes anh?",
-    "Không yes là anh khóc đó",
+    "Tại sao em lại không muốn?",
+    "Không muốn là anh khóc đó",
     "Em chắc chắn chưa?",
     "Năn nỉ đó đồng ý đi",
     "Thui mà đồng ý đuy...",
     "Anh không tốt ở đâu sao :((",
     " anh thơm má nè...",
-    "Một lần nữa, em có yes anh không?"
+    "Một lần nữa, em có muốn không?"
   ];
   
 
