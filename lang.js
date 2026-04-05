@@ -63,7 +63,7 @@ const gif = document.getElementById('gif');
 
   function yesClick(yesBtn) {
     gif.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm56dWNmY2ZrMHA4cHRta3R0cXBhN2l2dHY4cGw5ZnlwMnBzeWpjZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QEN54dmAJuTF0wBWXz/giphy.gif";
-    question.textContent = "Anh cũng yêu em nhìu moa moa💗";
+    question.textContent = "bố cũng yêu con nhìu moa moa💗";
     btnContainer.innerHTML = "";
   }
 
@@ -80,14 +80,14 @@ const gif = document.getElementById('gif');
   let qIndex = (noCount - 1) % questions.length;
   question.textContent = questions[qIndex];
 
-  yesBtn.textContent = "Yêu nhắm";
+  yesBtn.textContent = "xin mà";
   yesBtn.classList.remove('love');
 
   if (!document.getElementById('noBtn')) {
     const newNoBtn = document.createElement('button');
     newNoBtn.className = 'btn no';
     newNoBtn.id = 'noBtn';
-    newNoBtn.textContent = 'Không iu';
+    newNoBtn.textContent = 'Không ';
     btnContainer.appendChild(newNoBtn);
     newNoBtn.addEventListener('click', () => noClick(yesBtn, newNoBtn));
   }
