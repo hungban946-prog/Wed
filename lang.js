@@ -23,17 +23,17 @@ const gif = document.getElementById('gif');
   // Mảng các câu hỏi/thông điệp
   let questions = [
     "Suy nghĩ lại chưa nè?",
-    "Thật sự không iu luôn hả?",
+    "Thật sự không  luôn hả?",
     "Anh buồn quá đi...",
-    "Em dễ thương mà, iu anh đi!",
-    "Tại sao em lại không iu anh?",
-    "Không iu là anh khóc đó",
+    "Em dễ thương mà, đồng ý đi anh đi!",
+    "Tại sao em lại không yes anh?",
+    "Không yes là anh khóc đó",
     "Em chắc chắn chưa?",
     "Năn nỉ đó đồng ý đi",
     "Thui mà đồng ý đuy...",
     "Anh không tốt ở đâu sao :((",
-    "Yêu anh chở đi chơi nè...",
-    "Một lần nữa, em có iu anh không?"
+    " anh thơm má nè...",
+    "Một lần nữa, em có yes anh không?"
   ];
   
 
@@ -52,7 +52,7 @@ const gif = document.getElementById('gif');
   function resetPage() {
   noCount = 0;
   yesBtnSize = 18;
-  question.textContent = "Em có iu anh hông ?";
+  question.textContent = "Em có làm con anh không?";
   gif.src = firstGif;
   // Xử lý fallback nếu gif không load được
   gif.onerror = function() {
