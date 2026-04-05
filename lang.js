@@ -52,7 +52,7 @@ const gif = document.getElementById('gif');
   function resetPage() {
   noCount = 0;
   yesBtnSize = 18;
-  question.textContent = "Em có làm con anh không?";
+  question.textContent = "tiên có làm con anh không?";
   gif.src = firstGif;
   // Xử lý fallback nếu gif không load được
   gif.onerror = function() {
