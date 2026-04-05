@@ -39,8 +39,8 @@ const gif = document.getElementById('gif');
 
   function initButtons() {
     btnContainer.innerHTML = `
-      <button class="btn yes" id="yesBtn">Yêu Nhắm</button>
-      <button class="btn no" id="noBtn">Không iu</button>
+      <button class="btn yes" id="yesBtn">có em muốn</button>
+      <button class="btn no" id="noBtn">Không đời nào</button>
     `;
     const yesBtn = document.getElementById('yesBtn');
     const noBtn = document.getElementById('noBtn');
