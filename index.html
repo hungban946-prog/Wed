@@ -1,39 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIHI</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-      <!-- Bong bóng nổi lên -->
-  <div class="bubble pink"></div>
-  <div class="bubble light"></div>
-  <div class="bubble deep"></div>
-  <div class="bubble tiny"></div>
-  <!-- Thêm nhiều bong bóng -->
-  <div class="bubble pink" style="left:15%;width:50px;height:50px;animation-duration:12s;"></div>
-  <div class="bubble light" style="left:25%;width:35px;height:35px;animation-duration:11s;"></div>
-  <div class="bubble deep" style="left:55%;width:70px;height:70px;animation-duration:14s;"></div>
-  <div class="bubble tiny" style="left:75%;width:25px;height:25px;animation-duration:8s;"></div>
-  <div class="bubble pink" style="left:85%;width:40px;height:40px;animation-duration:13s;"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaje Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app" data-screen="files">
+      <section class="screen file-screen" data-screen="files">
+        <div class="file-stage">
+          <p class="stage-kicker">HTML HUNGMSP</p>
+          <h1 class="stage-title">LỢN CHÓ</h1>
 
-  <!-- Trái tim nổi lên -->
-  <div class="heart-float h1">💗</div>
-  <div class="heart-float h2">💕</div>
-  <div class="heart-float h3">💗</div>
-  <div class="heart-float h4">❤️</div>
-  <!-- Thêm nhiều trái tim -->
-  <div class="heart-float h1" style="left:30%;animation-delay:1.5s;">💗</div>
-  <div class="heart-float h2" style="left:45%;animation-delay:1.5s;">💞</div>
-  <div class="heart-float h3" style="left:65%;animation-delay:1.5s;">💗</div>
-  <div class="heart-float h4" style="left:90%;animation-delay:1.5s;">💕</div>
-    <div class="frame" id="mainFrame">
-        <h1 id="question">tiên có nguyện ý làm con anh không?</h1>
-    <img id="gif" src="https://media.tenor.com/76BaX0eo304AAAAj/kitty-kitty-heart.gif" alt="">
-    <div id="btnContainer"></div>
-    </div>
-    <script src="lang.js"></script>
-</body>
+            <button class="file-card file-card--active" data-open-file>
+              <span class="file-card__arrow">↗</span>
+              <span class="file-card__body">
+                <span class="file-card__icon">HUNG</span>
+                <span class="file-card__meta">
+                  </strong>file capcup</strong>
+                  <small>30 kB • HTML</small>
+                </span>
+                <span class="file-card__time">Open</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen launch-screen" data-screen="launch">
+        <button class="launch-orb" type="button" data-start>
+          <span class="launch-orb__ring"></span>
+          <span class="launch-orb__rocket">🚀</span>
+        </button>
+        <p class="launch-title">vào</p>
+      </section>
+
+      <section class="screen space-screen" data-screen="space">
+        <canvas id="starfield" class="starfield"></canvas>
+        <div id="orbitLayer" class="orbit-layer"></div>
+        <button class="restart-button" type="button" data-restart>Xem lại</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
