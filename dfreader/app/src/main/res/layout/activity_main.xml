@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ android:padding="12dp">
+
+ <EditText
+ android:id="@+id/procInput"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:hint="@string/hint_proc"
+ android:text="@string/default_proc"
+ android:inputType="text" />
+
+ <Button
+ android:id="@+id/btnFind"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="@string/btn_find" />
+
+ <Button
+ android:id="@+id/btnAttach"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="@string/btn_attach" />
+
+ <EditText
+ android:id="@+id/valueInput"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:hint="@string/hint_value"
+ android:inputType="numberDecimal" />
+
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+
+ <Button
+ android:id="@+id/btnScan"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:text="@string/btn_scan" />
+
+ <Button
+ android:id="@+id/btnRefine"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:text="@string/btn_refine" />
+ </LinearLayout>
+
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+
+ <Button
+ android:id="@+id/btnWrite"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:text="@string/btn_write" />
+
+ <Button
+ android:id="@+id/btnOverlay"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:text="@string/btn_overlay" />
+
+ <Button
+ android:id="@+id/btnClear"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:layout_weight="1"
+ android:text="@string/btn_clear" />
+ </LinearLayout>
+
+ <ScrollView
+ android:layout_width="match_parent"
+ android:layout_height="0dp"
+ android:layout_weight="1"
+ android:layout_marginTop="8dp">
+
+ <TextView
+ android:id="@+id/logView"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:fontFamily="monospace"
+ android:textSize="12sp" />
+ </ScrollView>
+</LinearLayout>
