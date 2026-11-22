@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="app_name">DFReader</string>
+ <string name="hint_proc">Tên process</string>
+ <string name="default_proc">com.tencent.tmgp.dfm</string>
+ <string name="btn_find">Tìm PID</string>
+ <string name="btn_attach">Attach</string>
+ <string name="hint_value">Giá trị</string>
+ <string name="btn_scan">Scan</string>
+ <string name="btn_refine">Refine</string>
+ <string name="btn_write">Ghi</string>
+ <string name="btn_overlay">Overlay</string>
+ <string name="btn_clear">Xóa log</string>
+</resources>
