@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101522">
+    <title>Tải DFReader</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #101522;
+        color: #eef2ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: radial-gradient(ellipse at top, #202b45 0, #101522 65%);
+      }
+
+      main {
+        width: min(100%, 520px);
+        padding: 40px;
+        border: 1px solid #303b54;
+        border-radius: 24px;
+        background: rgb(22 29 44 / 94%);
+        box-shadow: 0 24px 80px rgb(0 0 0 / 28%);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: #91a7ff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 8vw, 3rem);
+        letter-spacing: -0.04em;
+      }
+
+      .description {
+        margin: 12px 0 28px;
+        color: #b6bfd2;
+        line-height: 1.6;
+      }
+
+      .details {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+
+      .details span {
+        padding: 7px 11px;
+        border: 1px solid #394560;
+        border-radius: 999px;
+        color: #cbd4e8;
+        font-size: 0.85rem;
+      }
+
+      .download {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 12px;
+        background: #738bff;
+        color: #101522;
+        font-weight: 750;
+        text-align: center;
+        text-decoration: none;
+        transition: background 150ms ease, transform 150ms ease;
+      }
+
+      .download:hover {
+        transform: translateY(-1px);
+        background: #91a4ff;
+      }
+
+      .note {
+        margin: 18px 0 0;
+        color: #9da8be;
+        font-size: 0.85rem;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 480px) {
+        main {
+          padding: 28px 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Ứng dụng Android</p>
+      <h1>DFReader</h1>
+      <p class="description">Tải gói cài đặt DFReader cho thiết bị Android.</p>
+      <div class="details" aria-label="Thông tin ứng dụng">
+        <span>Phiên bản 1.0</span>
+        <span>Android 7.0 trở lên</span>
+        <span>ARM64</span>
+      </div>
+      <a class="download" href="./dfreader-debug.apk" download>Tải APK</a>
+      <p class="note">Đây là bản debug. Khi cài đặt, Android có thể yêu cầu bạn cho phép cài ứng dụng từ nguồn này.</p>
+    </main>
+  </body>
+</html>
